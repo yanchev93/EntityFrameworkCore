@@ -1,14 +1,16 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace P03_FootballBetting.Data.Models
+﻿namespace P03_FootballBetting.Data.Models
 {
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+
     public class Position
     {
         public int PositionId { get; set; }
 
         [Required]
         public string Name { get; set; }
-    
-        // collection players?
+
+        public ICollection<Player> Players { get; set; }
+
     }
 }

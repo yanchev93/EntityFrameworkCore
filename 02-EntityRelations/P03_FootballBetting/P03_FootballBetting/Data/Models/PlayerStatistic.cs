@@ -16,9 +16,6 @@
 
         public int MinutesPlayed { get; set; }
 
-        // collection ? Games
-
-        
     }
 }
 

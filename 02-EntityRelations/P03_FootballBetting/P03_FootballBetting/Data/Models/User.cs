@@ -1,5 +1,7 @@
 ﻿namespace P03_FootballBetting.Data.Models
 {
+    using System.Collections.Generic;
+
     public class User
     {
         public int UserId { get; set; }
@@ -14,6 +16,6 @@
 
         public decimal Balance { get; set; }
 
-        //collection ? Bets
+        public ICollection<Bet> Bets { get; set; }
     }
 }

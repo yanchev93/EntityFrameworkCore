@@ -1,5 +1,6 @@
 ﻿namespace P03_FootballBetting.Data.Models
 {
+    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
     public class Color
@@ -9,7 +10,9 @@
         [Required]
         public string Name { get; set; }
 
-        // collection teams?
+        public ICollection<Team> PrimaryKitTeams { get; set; }
+
+        public ICollection<Team> SecondaryKitTeams { get; set; }
     }
 }
 

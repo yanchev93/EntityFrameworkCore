@@ -1,7 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace P03_FootballBetting.Data.Models
+﻿namespace P03_FootballBetting.Data.Models
 {
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+
     public class Country
     {
         public int CountryId { get; set; }
@@ -9,7 +10,7 @@ namespace P03_FootballBetting.Data.Models
         [Required]
         public string Name { get; set; }
 
-        //collection ? towns
+        public ICollection<Town> Towns { get; set; }
     }
 }
 

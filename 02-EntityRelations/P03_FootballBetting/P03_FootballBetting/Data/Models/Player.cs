@@ -1,7 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace P03_FootballBetting.Data.Models
+﻿namespace P03_FootballBetting.Data.Models
 {
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+
     public class Player
     {
         public int PlayerId { get; set; }
@@ -22,9 +23,9 @@ namespace P03_FootballBetting.Data.Models
 
         public bool IsInjured { get; set; }
 
+        // public ICollection<Game> Games { get; set; }
 
-        // collection teams?
-        // collection ? playerstatistics
+        public ICollection<PlayerStatistic> PlayerStatistics { get; set; }
     }
 }
 

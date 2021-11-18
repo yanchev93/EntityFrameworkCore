@@ -1,7 +1,8 @@
-﻿using System;
-
-namespace P03_FootballBetting.Data.Models
+﻿namespace P03_FootballBetting.Data.Models
 {
+    using System;
+    using System.Collections.Generic;
+
     public class Game
     {
         public int GameId { get; set; }
@@ -26,9 +27,11 @@ namespace P03_FootballBetting.Data.Models
 
         public double DrawBetRate { get; set; }
 
-        public string Result { get; set; }
+        public int Result { get; set; }
 
-        //collection ? Bets
+        public ICollection<PlayerStatistic> PlayerStatistics { get; set; }
+
+        public ICollection<Bet> Bets { get; set; }
     }
 }
 

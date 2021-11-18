@@ -1,5 +1,6 @@
 ﻿namespace P03_FootballBetting.Data.Models
 {
+    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
     public class Town
@@ -13,7 +14,7 @@
 
         public Country Country { get; set; }
 
-        //collection teams?
+        public ICollection<Team> Teams { get; set; }
     }
 }
 

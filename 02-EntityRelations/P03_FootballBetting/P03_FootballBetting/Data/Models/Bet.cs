@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace P03_FootballBetting.Data.Models
+﻿namespace P03_FootballBetting.Data.Models
 {
+    using System;
+
     public class Bet
     {
         public int BetId { get; set; }
