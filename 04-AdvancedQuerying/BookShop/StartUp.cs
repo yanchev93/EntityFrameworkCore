@@ -5,6 +5,7 @@
     using Initializer;
     using System;
     using System.Linq;
+    using System.Text;
 
     public class StartUp
     {
@@ -14,9 +15,29 @@
             //DbInitializer.ResetDatabase(dbContext);
             //var input = Console.ReadLine();
 
-            var result = GetBooksNotReleasedIn(dbContext, 2000);
+            var result = GetBooksByCategory(dbContext, "hoRRor mystery drama");
 
             Console.WriteLine(result);
+        }
+
+        public static string GetBooksByCategory(BookShopContext context, string input)
+        {
+            var categories = input.ToLower().Split(' ', StringSplitOptions.RemoveEmptyEntries);
+
+            var sb = new StringBuilder();
+            var books = context.Books
+                .Where(x => x.BookCategories
+                        .Any(b => categories.Contains(b.Category.Name.ToLower())))
+                .OrderBy(x => x.Title)
+                .Select(x => x.Title)
+                .ToArray();
+
+            foreach (var book in books)
+            {
+                sb.AppendLine(book);
+            }
+
+            return sb.ToString().TrimEnd();
         }
 
         public static string GetBooksNotReleasedIn(BookShopContext context, int year)
