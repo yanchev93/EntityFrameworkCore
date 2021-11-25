@@ -1,0 +1,13 @@
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\04-AdvancedQuerying\BookShop.Data\bin\Debug\netcoreapp3.1\BookShop.Data.deps.json
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\04-AdvancedQuerying\BookShop.Data\bin\Debug\netcoreapp3.1\BookShop.Data.dll
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\04-AdvancedQuerying\BookShop.Data\bin\Debug\netcoreapp3.1\BookShop.Data.pdb
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\04-AdvancedQuerying\BookShop.Data\bin\Debug\netcoreapp3.1\BookShop.Models.dll
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\04-AdvancedQuerying\BookShop.Data\bin\Debug\netcoreapp3.1\BookShop.Models.pdb
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\04-AdvancedQuerying\BookShop.Data\obj\Debug\netcoreapp3.1\BookShop.Data.csproj.AssemblyReference.cache
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\04-AdvancedQuerying\BookShop.Data\obj\Debug\netcoreapp3.1\BookShop.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\04-AdvancedQuerying\BookShop.Data\obj\Debug\netcoreapp3.1\BookShop.Data.AssemblyInfoInputs.cache
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\04-AdvancedQuerying\BookShop.Data\obj\Debug\netcoreapp3.1\BookShop.Data.AssemblyInfo.cs
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\04-AdvancedQuerying\BookShop.Data\obj\Debug\netcoreapp3.1\BookShop.Data.csproj.CoreCompileInputs.cache
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\04-AdvancedQuerying\BookShop.Data\obj\Debug\netcoreapp3.1\BookShop.Data.csproj.CopyComplete
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\04-AdvancedQuerying\BookShop.Data\obj\Debug\netcoreapp3.1\BookShop.Data.dll
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\04-AdvancedQuerying\BookShop.Data\obj\Debug\netcoreapp3.1\BookShop.Data.pdb
