@@ -17,14 +17,25 @@
             //DbInitializer.ResetDatabase(dbContext);
             //var input = Console.ReadLine();
 
-            var result = CountBooks(dbContext, 12);
+            var result = CountCopiesByAuthor(dbContext);
 
             Console.WriteLine(result);
         }
 
+
+
         public static string CountCopiesByAuthor(BookShopContext context)
         {
-            return null;
+            var bookCopies = context.Authors
+                .Select(x => new
+                {
+                    bookCopies = x.Books.Sum(x => x.Copies),
+                    name = x.FirstName + " " + x.LastName
+                })
+                .OrderByDescending(x => x.bookCopies)
+                .ToArray();
+
+            return string.Join(Environment.NewLine, bookCopies.Select(x => $"{x.name} - {x.bookCopies}"));
         }
 
         public static int CountBooks(BookShopContext context, int lengthCheck)

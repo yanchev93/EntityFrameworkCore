@@ -1,0 +1,13 @@
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\05-JSONProcessing\ProductShop\bin\Debug\netcoreapp2.1\ProductShop.deps.json
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\05-JSONProcessing\ProductShop\bin\Debug\netcoreapp2.1\ProductShop.runtimeconfig.json
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\05-JSONProcessing\ProductShop\bin\Debug\netcoreapp2.1\ProductShop.runtimeconfig.dev.json
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\05-JSONProcessing\ProductShop\bin\Debug\netcoreapp2.1\ProductShop.dll
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\05-JSONProcessing\ProductShop\bin\Debug\netcoreapp2.1\ProductShop.pdb
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\05-JSONProcessing\ProductShop\obj\Debug\netcoreapp2.1\ProductShop.csproj.AssemblyReference.cache
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\05-JSONProcessing\ProductShop\obj\Debug\netcoreapp2.1\ProductShop.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\05-JSONProcessing\ProductShop\obj\Debug\netcoreapp2.1\ProductShop.AssemblyInfoInputs.cache
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\05-JSONProcessing\ProductShop\obj\Debug\netcoreapp2.1\ProductShop.AssemblyInfo.cs
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\05-JSONProcessing\ProductShop\obj\Debug\netcoreapp2.1\ProductShop.csproj.CoreCompileInputs.cache
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\05-JSONProcessing\ProductShop\obj\Debug\netcoreapp2.1\ProductShop.dll
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\05-JSONProcessing\ProductShop\obj\Debug\netcoreapp2.1\ProductShop.pdb
+D:\Programs\01. SoftUni\EntityFramework\EntityFrameWork\EntityFrameworkCore\05-JSONProcessing\ProductShop\obj\Debug\netcoreapp2.1\ProductShop.genruntimeconfig.cache
