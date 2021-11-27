@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using ProductShop.Data;
 using ProductShop.DataTransferObject;
@@ -27,11 +28,100 @@ namespace ProductShop
             //ImportUsers(productShopContext, usersJSON);
             //ImportProducts(productShopContext, productsJSON);
             //ImportCategories(productShopContext, categoriesJSON);
-            //var result = ImportCategoryProducts(productShopContext, categoryProductsJSON);
+            //ImportCategoryProducts(productShopContext, categoryProductsJSON);
 
-            var result = GetProductsInRange(productShopContext);
+            var result = GetUsersWithProducts(productShopContext);
 
             Console.WriteLine(result);
+        }
+
+        public static string GetUsersWithProducts(ProductShopContext context)
+        {
+            var users = context.Users
+                .Include(x => x.ProductsSold)
+                .ToArray()
+                .Where(x => x.ProductsSold.Any(b => b.BuyerId != null))
+                .Select(u => new
+                {
+                    firstName = u.FirstName,
+                    lastName = u.LastName,
+                    age = u.Age,
+                    soldProducts = new
+                    {
+                        count = u.ProductsSold.Where(x => x.BuyerId != null).Count(),
+                        products = u.ProductsSold.Where(x => x.BuyerId != null)
+                        .Select(p => new
+                        {
+                            name = p.Name,
+                            price = p.Price
+                        })
+                    }
+                })
+                .OrderByDescending(x => x.soldProducts.products.Count())
+                .ToArray();
+
+            var resultUsers = new
+            {
+                usersCount = context.Users.Where(x => x.ProductsSold.Any(b => b.BuyerId != null)).Count(),
+                users = users
+            };
+
+            var jsonSerializerOptions = new JsonSerializerSettings
+            {
+                NullValueHandling = NullValueHandling.Ignore
+            };
+
+            var json = JsonConvert.SerializeObject(resultUsers, jsonSerializerOptions);
+
+            return json;
+        }
+
+        public static string GetCategoriesByProductsCount(ProductShopContext context)
+        {
+            var categories = context.Categories
+                .Select(x => new
+                {
+                    category = x.Name,
+                    productsCount = x.CategoryProducts.Count(),
+                    averagePrice = x.CategoryProducts.Average(p => p.Product.Price).ToString("F2"),
+                    totalRevenue = x.CategoryProducts.Sum(p => p.Product.Price).ToString("F2")
+                })
+                .OrderByDescending(x => x.productsCount)
+                .ToArray();
+
+            var json = JsonConvert.SerializeObject(categories);
+
+
+            return json;
+        }
+
+        public static string GetSoldProducts(ProductShopContext context)
+        {
+
+            var products = context.Users
+                .Where(u => u.ProductsSold.Any(p => p.BuyerId != null))
+                .Select(u => new
+                {
+                    firstName = u.FirstName,
+                    lastName = u.LastName,
+                    soldProducts = u.ProductsSold
+                    .Where(p => p.BuyerId != null)
+                    .Select(b => new
+                    {
+                        name = b.Name,
+                        price = b.Price,
+                        buyerFirstName = b.Buyer.FirstName,
+                        buyerLastName = b.Buyer.LastName
+                    })
+                    .ToArray()
+                })
+                .OrderBy(x => x.lastName)
+                .ThenBy(x => x.firstName)
+                .ToArray();
+
+            var jsonOutput = JsonConvert.SerializeObject(products, Formatting.Indented);
+
+            return jsonOutput;
         }
 
         public static string GetProductsInRange(ProductShopContext context)
