@@ -5387,10 +5387,8 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "AutoMapper >= 7.0.1",
-      "Microsoft.EntityFrameworkCore >= 2.1.1",
       "Microsoft.EntityFrameworkCore.Proxies >= 2.1.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.1.1",
-      "Microsoft.Extensions.DependencyInjection >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
       "Newtonsoft.Json >= 10.0.1"
     ]
@@ -5402,11 +5400,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programs\\01. SoftUni\\EntityFramework\\EntityFrameWork\\EntityFrameworkCore\\05-JSONProcessing-Shop\\ProductShop\\ProductShop.csproj",
-      "projectName": "ProductShop",
-      "projectPath": "D:\\Programs\\01. SoftUni\\EntityFramework\\EntityFrameWork\\EntityFrameworkCore\\05-JSONProcessing-Shop\\ProductShop\\ProductShop.csproj",
+      "projectUniqueName": "D:\\Programs\\01. SoftUni\\EntityFramework\\EntityFrameWork\\EntityFrameworkCore\\05-JSONProcessing-Cars\\CarDealer\\CarDealer.csproj",
+      "projectName": "CarDealer",
+      "projectPath": "D:\\Programs\\01. SoftUni\\EntityFramework\\EntityFrameWork\\EntityFrameworkCore\\05-JSONProcessing-Cars\\CarDealer\\CarDealer.csproj",
       "packagesPath": "C:\\Users\\teoya\\.nuget\\packages\\",
-      "outputPath": "D:\\Programs\\01. SoftUni\\EntityFramework\\EntityFrameWork\\EntityFrameworkCore\\05-JSONProcessing-Shop\\ProductShop\\obj\\",
+      "outputPath": "D:\\Programs\\01. SoftUni\\EntityFramework\\EntityFrameWork\\EntityFrameworkCore\\05-JSONProcessing-Cars\\CarDealer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Програми\\VS share\\NuGetPackages"
@@ -5443,19 +5441,11 @@
             "target": "Package",
             "version": "[7.0.1, )"
           },
-          "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[2.1.1, )"
-          },
           "Microsoft.EntityFrameworkCore.Proxies": {
             "target": "Package",
             "version": "[2.1.1, )"
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
-            "target": "Package",
-            "version": "[2.1.1, )"
-          },
-          "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[2.1.1, )"
           },

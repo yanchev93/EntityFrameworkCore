@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AA0j082ak4LdQLY8k1fimVkDdpc+S4x36yu2kYS/8ssLZ6Sd5xE8W8nr07etixIAqm7nkS3010JQn5CGE/MgoQ==",
+  "dgSpecHash": "jHLY13XWletceSfeXQR4NcBP/c2oS0I7n4QVxhYlzZtMin4SMeG8wcpEk0UAwaQ6tgk21K9NQyKjZhktMqI6jg==",
   "success": true,
-  "projectFilePath": "D:\\Programs\\01. SoftUni\\EntityFramework\\EntityFrameWork\\EntityFrameworkCore\\05-JSONProcessing-Shop\\ProductShop\\ProductShop.csproj",
+  "projectFilePath": "D:\\Programs\\01. SoftUni\\EntityFramework\\EntityFrameWork\\EntityFrameworkCore\\05-JSONProcessing-Cars\\CarDealer\\CarDealer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\teoya\\.nuget\\packages\\automapper\\7.0.1\\automapper.7.0.1.nupkg.sha512",
     "C:\\Users\\teoya\\.nuget\\packages\\castle.core\\4.2.1\\castle.core.4.2.1.nupkg.sha512",
