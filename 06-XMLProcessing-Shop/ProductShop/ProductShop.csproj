@@ -6,6 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Dtos\Export\**" />
+    <Compile Remove="Dtos\Import\**" />
+    <EmbeddedResource Remove="Dtos\Export\**" />
+    <EmbeddedResource Remove="Dtos\Import\**" />
+    <None Remove="Dtos\Export\**" />
+    <None Remove="Dtos\Import\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="7.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="2.1.1" />
@@ -15,8 +24,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Dtos\Export\" />
-    <Folder Include="Dtos\Import\" />
+    <Folder Include="Dtos\Input\" />
+    <Folder Include="Dtos\Output\" />
   </ItemGroup>
 
 </Project>
