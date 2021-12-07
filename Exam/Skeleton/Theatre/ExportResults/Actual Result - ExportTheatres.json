@@ -1,0 +1,109 @@
+[
+  {
+    "Name": "Artcraft Theatre",
+    "Halls": 9,
+    "TotalIncome": 780.33,
+    "Tickets": [
+      {
+        "Price": 99.92,
+        "RowNumber": 1
+      },
+      {
+        "Price": 97.66,
+        "RowNumber": 6
+      },
+      {
+        "Price": 94.23,
+        "RowNumber": 1
+      },
+      {
+        "Price": 92.75,
+        "RowNumber": 2
+      },
+      {
+        "Price": 91.12,
+        "RowNumber": 2
+      },
+      {
+        "Price": 90.78,
+        "RowNumber": 3
+      },
+      {
+        "Price": 84.19,
+        "RowNumber": 5
+      },
+      {
+        "Price": 82.61,
+        "RowNumber": 10
+      },
+      {
+        "Price": 81.76,
+        "RowNumber": 1
+      },
+      {
+        "Price": 80.49,
+        "RowNumber": 6
+      },
+      {
+        "Price": 78.07,
+        "RowNumber": 9
+      },
+      {
+        "Price": 70.43,
+        "RowNumber": 8
+      },
+      {
+        "Price": 67.47,
+        "RowNumber": 7
+      },
+      {
+        "Price": 64.16,
+        "RowNumber": 9
+      },
+      {
+        "Price": 55.96,
+        "RowNumber": 10
+      },
+      {
+        "Price": 53.6,
+        "RowNumber": 1
+      },
+      {
+        "Price": 53.41,
+        "RowNumber": 1
+      },
+      {
+        "Price": 33.35,
+        "RowNumber": 6
+      },
+      {
+        "Price": 22.84,
+        "RowNumber": 1
+      },
+      {
+        "Price": 22.11,
+        "RowNumber": 6
+      },
+      {
+        "Price": 18.64,
+        "RowNumber": 8
+      },
+      {
+        "Price": 18.21,
+        "RowNumber": 8
+      },
+      {
+        "Price": 15.73,
+        "RowNumber": 3
+      },
+      {
+        "Price": 15.72,
+        "RowNumber": 9
+      },
+      {
+        "Price": 11.62,
+        "RowNumber": 9
+      }
+    ]
+  }
+]
